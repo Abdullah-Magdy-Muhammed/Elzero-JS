@@ -129,80 +129,114 @@
 // window.onload = function(){
 //   two.focus();
 // }
-document.body.style.cssText = "margin: 0px; background-color: rgb(236, 236, 236); font-family: Tahoma, Arial;";
+// document.body.style.cssText = "margin: 0px; background-color: rgb(236, 236, 236); font-family: Tahoma, Arial;";
 
-// Header Line 5 To 42
+// // Header Line 5 To 42
 
-let header = document.createElement("header")
-header.className = "website-head"
-header.style.cssText = "display: flex; padding: 20px; background-color: rgb(255, 255, 255); justify-content: space-between; align-items: center;"
+// let header = document.createElement("header")
+// header.className = "website-head"
+// header.style.cssText = "display: flex; padding: 20px; background-color: rgb(255, 255, 255); justify-content: space-between; align-items: center;"
 
-let logoDiv = document.createElement("div")
-logoDiv.style.cssText = "font-weight: bold; color: # 23a96e; font-size: 22px"
-let logoText = document.createTextNode("Elzero")
+// let logoDiv = document.createElement("div")
+// logoDiv.style.cssText = "font-weight: bold; color: # 23a96e; font-size: 22px"
+// let logoText = document.createTextNode("Elzero")
 
-let ul = document.createElement("ul")
-ul.className = "menu"
-ul.style.cssText = "padding: 0px; margin: 0px; display: flex; list-style: none; color: rgb(136, 136, 136)"
+// let ul = document.createElement("ul")
+// ul.className = "menu"
+// ul.style.cssText = "padding: 0px; margin: 0px; display: flex; list-style: none; color: rgb(136, 136, 136)"
 
-let li1 = document.createElement("li")
-li1.style.cssText = "padding-right: 20px"
-let li1Text = document.createTextNode("Home")
-let li2 = document.createElement("li")
-li2.style.cssText = "padding-right: 20px"
-let li2Text = document.createTextNode("About")
-let li3 = document.createElement("li")
-li3.style.cssText = "padding-right: 20px"
-let li3Text = document.createTextNode("Service")
-let li4 = document.createElement("li")
-li4.style.cssText = "padding-right: 5px"
-let li4Text = document.createTextNode("Contact")
+// let li1 = document.createElement("li")
+// li1.style.cssText = "padding-right: 20px"
+// let li1Text = document.createTextNode("Home")
+// let li2 = document.createElement("li")
+// li2.style.cssText = "padding-right: 20px"
+// let li2Text = document.createTextNode("About")
+// let li3 = document.createElement("li")
+// li3.style.cssText = "padding-right: 20px"
+// let li3Text = document.createTextNode("Service")
+// let li4 = document.createElement("li")
+// li4.style.cssText = "padding-right: 5px"
+// // let li4Text = document.createTextNode("Contact")
 
-li1.appendChild(li1Text)
-li2.appendChild(li2Text)
-li3.appendChild(li3Text)
-li4.appendChild(li4Text)
-ul.appendChild(li1)
-ul.appendChild(li2)
-ul.appendChild(li3)
-ul.appendChild(li4)
+// // li1.appendChild(li1Text)
+// // li2.appendChild(li2Text)
+// // li3.appendChild(li3Text)
+// // li4.appendChild(li4Text)
+// // ul.appendChild(li1)
+// // ul.appendChild(li2)
+// // ul.appendChild(li3)
+// // ul.appendChild(li4)
 
-logoDiv.appendChild(logoText)
+// // logoDiv.appendChild(logoText)
 
-header.appendChild(logoDiv)
-header.appendChild(ul)
+// // header.appendChild(logoDiv)
+// // header.appendChild(ul)
 
-// Content Div Lien 46 To 64
+// // Content Div Lien 46 To 64
 
-let contentDiv = document.createElement("div")
-contentDiv.style.cssText = "background-color: # ececec; display: flex; padding: 20px; flex-wrap: wrap; justify-content: center; gap: 20px; min-height: calc(100vh - 142px); box-sizing: border-box;"
-for (let i = 1; i <= 15; i++) {
-    let productDiv = document.createElement("div")
-    productDiv.style.cssText = "padding: 20px; background-color: # ffffff; border: 1px solid rgb(221, 221, 221); width: calc((100% - 40px) / 3); box-sizing: border-box; text-align: center; color: rgb(136, 136, 136); border-radius: 6px;"
+// let contentDiv = document.createElement("div")
+// contentDiv.style.cssText = "background-color: # ececec; display: flex; padding: 20px; flex-wrap: wrap; justify-content: center; gap: 20px; min-height: calc(100vh - 142px); box-sizing: border-box;"
+// for (let i = 1; i <= 15; i++) {
+//     let productDiv = document.createElement("div")
+//     productDiv.style.cssText = "padding: 20px; background-color: # ffffff; border: 1px solid rgb(221, 221, 221); width: calc((100% - 40px) / 3); box-sizing: border-box; text-align: center; color: rgb(136, 136, 136); border-radius: 6px;"
     
-    let tempSpan = document.createElement("span")
-    tempSpan.style.cssText = "font-size: 40px; color: black; font-weight: normal; display; block; margin-bottom: 10px; margin-top: 10px"
-    let tempText2 = document.createTextNode(`${i}`)
-    tempSpan.appendChild(tempText2)
+//     let tempSpan = document.createElement("span")
+//     tempSpan.style.cssText = "font-size: 40px; color: black; font-weight: normal; display; block; margin-bottom: 10px; margin-top: 10px"
+//     let tempText2 = document.createTextNode(`${i}`)
+//     tempSpan.appendChild(tempText2)
 
-    let tempP2 = document.createElement("p")
-    let tempText1 = document.createTextNode(`product`)
-    tempP2.appendChild(tempText1)
+//     let tempP2 = document.createElement("p")
+//     let tempText1 = document.createTextNode(`product`)
+//     tempP2.appendChild(tempText1)
 
-    productDiv.appendChild(tempSpan)
-    productDiv.appendChild(tempP2)
-    contentDiv.appendChild(productDiv)
-}
+//     productDiv.appendChild(tempSpan)
+//     productDiv.appendChild(tempP2)
+//     contentDiv.appendChild(productDiv)
+// }
 
-// Footer Line 68 To 73
+// // Footer Line 68 To 73
 
-let footer = document.createElement("footer")
-footer.style.cssText = "background-color: #23a96e; font-size: 26px; text-align: center; padding: 5px; color: white;"
-let footerP = document.createElement("p")
-let footerPText = document.createTextNode("Copyright 2022")
-footerP.appendChild(footerPText)
-footer.appendChild(footerP)
+// let footer = document.createElement("footer")
+// footer.style.cssText = "background-color: #23a96e; font-size: 26px; text-align: center; padding: 5px; color: white;"
+// let footerP = document.createElement("p")
+// let footerPText = document.createTextNode("Copyright 2022")
+// footerP.appendChild(footerPText)
+// footer.appendChild(footerP)
 
-document.body.appendChild(header)
-document.body.appendChild(contentDiv)
-document.body.appendChild(footer)
+// document.body.appendChild(header)
+// document.body.appendChild(contentDiv)
+// document.body.appendChild(footer)
+
+// setInterval(sayHello,3000,"boda")
+
+// function sayHello(user){
+//     console.log(`hello ${user}`)
+// }
+
+// let div = document.querySelector("div");
+// let counter = setInterval(countDown,3000,)
+
+// function countDown(){
+//     div.innerHTML -=1;
+//     if(div.innerHTML === 0){
+//         clearInterval(counter)
+//     }
+// }
+// window.localStorage.setItem("color","red");
+
+// let lis = document.querySelectorAll("ul li");
+// let exp = document.querySelector(".experiment");
+
+// lis.forEach((li) => {
+//     li.addEventListener("click", (e) =>{
+//     console.log(e.currentTarget.dataset.color);
+//    lis.forEach((li) => {
+//     lis.classList.remove("active");
+//    });
+//    e.currentTarget.classList.add("active");
+//    Window.localStorage.setItem("color",e.currentTarget.dataset.color);
+//    exp.style.background = e.currentTarget.dataset.color
+//   });
+
+// });
+
